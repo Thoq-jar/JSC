@@ -1,0 +1,12 @@
+{
+  "name": "jsc",
+  "version": "1.0.0",
+  "main": "./src/compiler.js",
+  "keywords": [],
+  "author": "Thoq",
+  "license": "MIT",
+  "description": "JavaScript compiler",
+  "dependencies": {
+    "terser": "^5.31.5"
+  }
+}
