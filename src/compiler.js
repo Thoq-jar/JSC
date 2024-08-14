@@ -1,9 +1,17 @@
 #!/usr/bin/env node
+
 const fs = require('node:fs');
 const path = require('node:path');
 require('node:child_process');
 const { minify } = require('terser');
 const { exec } = require('node:child_process');
+const os = require('os');
+
+const isWindows = os.platform() === 'win32';
+if (isWindows) {
+    console.error('This script is not supported on Windows! Please use git bash or WSL instead.');
+    process.exit(1);
+}
 
 const args = process.argv.slice(2);
 if (args.length !== 2) {
