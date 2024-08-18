@@ -13,7 +13,7 @@ fi
 
 echo "Building files..."
 chmod +x src/compiler.js >> /dev/null 2>&1
-
+npm i
 echo "Installing files..."
 sudo cp src/compiler.js /usr/local/bin/jsc >> /dev/null 2>&1
 
